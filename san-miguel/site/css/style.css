@@ -1,0 +1,160 @@
+/**********
+
+Author: Haroldo Costa.
+Company: Orb Digital Branding.
+Site: 
+Location: Fortaleza-CE, Brasil.
+Name: San Miguel - Land Page
+Last update: 2017/03/03 
+Standards: PHP, HTML, CSS, Javascript
+Components: jQuery, jQuery Validate, CSS Reset.
+Software: Cadastro de novos clientes
+
+**********/
+
+/********** RESET BY ERIC MEYER **********/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}:focus{outline:0;}body{line-height:1;color:black;background:white;}ol,ul{list-style: none;}table{border-collapse:separate;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}
+*{font-family: 'Source Sans Pro',sans-serif!important; }
+hr{background: #EEEEEE;width: 0%;clear: both;height: 1px;border: 0;outline: none;margin: 15px 0;display: block;}
+h1{margin: 15px 0;color: #AAAAAA;font-weight: 800;font-size: 18px;}
+input, select, textarea{border-radius: 8px;background: #EEEEEE;border: 1px solid #DDDDDD;display: inline-block;width: 95%;padding: 13px 8px;font-size: 14px;color: #666666;}
+
+select {width: 227px!important;color: #666666;}
+
+
+/* Imagem de fundo */
+#bg {
+  position: fixed; 
+  /*top: -50%; 
+  left: -50%; */
+  z-index: -1;
+  width: 100%; 
+  height: 100%;
+  background: url(../img/fundo-wr.jpg) no-repeat;
+  background-size: cover;
+}
+#bg img {
+  position: absolute; 
+  top: -20%; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+.pattern {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+	background: transparent url(../img/pattern.png) repeat top left;
+}
+
+/* /Imagem de fundo */
+
+/* Estrutura */
+
+.container_topo{
+
+	max-width: 100%;
+	zoom: 1;
+	position: relative;
+	left: ;
+}
+
+.container{
+	position: absolute;
+  width: 100%;
+	/*left: 50%;*/
+	top: 20%;
+}
+
+.container:before,
+.container:after
+{
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.topo{}
+
+.topo,
+.logo,
+.texto,
+.cadastro
+{display: inline-block;}
+
+.cadastro{position: relative;	padding-top: 17px;padding-bottom: 17px;/*margin-left: -250px;margin-bottom: 190px;padding: 17px;*/width: 100%; max-width: 466px;background: #FFFFFF;border-radius: 15px;min-height: 415px;z-index: 2;margin: 0 auto;display: block;}
+img { margin: 0 auto;display: block;}
+p { text-align: center;color: #515151;padding: 20px 0;}
+
+/* Conteudo */
+.logo{
+  width: 30%;
+}
+.logo img{
+width: 100%;
+height: auto;
+max-width: 547px;
+}
+.texto{
+  width: 100%;
+  vertical-align: top;
+  margin-left:-4px;
+  text-align: center;
+ 
+     }
+.texto p{color: #586A2E;margin-top: 40px;font-size: 25px;line-height: 40px;font-weight: 600; font-family: 'Josefin Slab', serif !important;}
+.texto p span{font-family: 'Josefin Slab', serif !important;}
+.field{width: 90%;display: inline-block;margin: 2% 5%;position: relative;}
+.field_m{width: 90%;margin-right: 10px;}
+label{position: absolute;top: 17px;left: 9px;color: #888888}
+
+.parcial{color: #AAAAAA!important;}
+
+.sucesso, #enviar{background: #2faaf0;font-size: 18px;font-weight: 700;color: #FFFFFF;padding: 15px 30px;width: auto;cursor: pointer;margin: 0 auto;display: block;}
+.sucesso{border-radius: 8px;text-align: center;margin: 150px 56px;display: block;}
+/* #enviar:hover{background: #891111;border-color: #C3141B} */
+
+.warning {position: absolute;right: 20px;top: 205px;font-size: 12px;color: #AAAAAA;}
+label.error {position: absolute;left: 10px;top: 48px;color: red;font-size: 11px;}
+
+.footer{
+ position: fixed;
+ float: right;
+ width: 500px;
+ left: 71%;
+ top: 45%;
+  }
+  .footer img{}
+  .footer .wr{float: right;
+  margin: -168px 166px 0 0;
+}
+
+.endereco p{
+  margin-top: 10px;
+  color: #586A2E;
+  line-height: 20px;
+}
+
+span{
+  margin-left: 300px;
+}
+.cadastro_inner a {
+    text-decoration: none;
+    color: #515151;
+    display: block;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
